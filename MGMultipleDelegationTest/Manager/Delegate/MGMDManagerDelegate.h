@@ -11,6 +11,6 @@
 @protocol MGMDManagerDelegate <NSObject>
 
 @optional
-- (void)workDidFinishWithString:(NSString *)string;
+- (void)workManager:(MGMDManager *)manager didFinishWorkForObject:(id)object;
 
 @end

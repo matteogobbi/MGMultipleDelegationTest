@@ -9,39 +9,43 @@
 #import "MGMDManager.h"
 #import "MGMDManagerDelegate.h"
 
-@implementation MGMDManager {
-    NSMutableSet *delegates;
-}
+@interface MGMDManager ()
 
-+ (id)sharedManager {
-    static MGMDManager *sharedManager = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedManager = [self new];
-    });
-    return sharedManager;
-}
+@property (nonatomic, strong) NSMutableSet *delegates;
 
+@end
 
-- (id)init {
-    if(self = [super init])
-        delegates = [NSMutableSet new];
-    
+@implementation MGMDManager
+
+- (id)init
+{
+    if (self = [super init]) {
+        _delegates = [NSMutableSet set];
+    }
     return self;
 }
 
-- (void)addDelegate:(id)delegate {
-    [delegates addObject:delegate];
+- (void)registerDelegate:(id)delegate
+{
+    NSValue *value = [NSValue valueWithNonretainedObject:delegate];
+    [self.delegates addObject:value];
 }
 
-- (void)removeDelegate:(id)delegate {
-    [delegates removeObject:delegate];
+- (void)deregisterDelegate:(id)delegate
+{
+    for (NSValue *value in [self.delegates copy]) {
+        if ([[value nonretainedObjectValue] isEqual:delegate]) {
+            [self.delegates removeObject:value];
+        }
+    }
 }
 
-- (void)finishWork {
-    for(id delegate in delegates) {
-        if ([delegate respondsToSelector:@selector(workDidFinishWithString:)]) {
-            [delegate workDidFinishWithString:@"RESULT RETURNED"];
+- (void)finishWork
+{
+    for (NSValue *value in self.delegates) {
+        id delegate = [value nonretainedObjectValue];
+        if ([delegate respondsToSelector:@selector(workManager:didFinishWorkForObject:)]) {
+            [delegate workManager:self didFinishWorkForObject:delegate];
         }
     }
 }

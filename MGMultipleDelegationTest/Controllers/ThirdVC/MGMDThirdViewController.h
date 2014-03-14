@@ -7,13 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MGMDBaseViewController.h"
 #import "MGMDManagerDelegate.h"
 
-@class MGMDManager;
-
-@interface MGMDThirdViewController : UIViewController
-
-@property (nonatomic, strong) MGMDManager *manager;
+@interface MGMDThirdViewController : MGMDBaseViewController <MGMDManagerDelegate>
 
 - (IBAction)openNewView:(id)sender;
 

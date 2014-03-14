@@ -25,6 +25,7 @@
 		652A977E18D27F8400383613 /* MGMDSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A977D18D27F8400383613 /* MGMDSecondViewController.m */; };
 		652A978118D27F9000383613 /* MGMDThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A978018D27F9000383613 /* MGMDThirdViewController.m */; };
 		652A978518D2832200383613 /* MGMDThirdBisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A978418D2832200383613 /* MGMDThirdBisViewController.m */; };
+		D350756E18D315DB00945641 /* MGMDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D350756D18D315DB00945641 /* MGMDBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		652A978018D27F9000383613 /* MGMDThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMDThirdViewController.m; sourceTree = "<group>"; };
 		652A978318D2832200383613 /* MGMDThirdBisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMDThirdBisViewController.h; sourceTree = "<group>"; };
 		652A978418D2832200383613 /* MGMDThirdBisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMDThirdBisViewController.m; sourceTree = "<group>"; };
+		D350756C18D315DB00945641 /* MGMDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMDBaseViewController.h; sourceTree = "<group>"; };
+		D350756D18D315DB00945641 /* MGMDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMDBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,8 @@
 		652A976E18D27E9700383613 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D350756C18D315DB00945641 /* MGMDBaseViewController.h */,
+				D350756D18D315DB00945641 /* MGMDBaseViewController.m */,
 				652A976F18D27E9700383613 /* FirstVC */,
 				652A977218D27E9700383613 /* SecondVC */,
 				652A977318D27E9700383613 /* ThirdVC */,
@@ -338,6 +343,7 @@
 			files = (
 				652A977B18D27E9700383613 /* MGMDManager.m in Sources */,
 				652A978118D27F9000383613 /* MGMDThirdViewController.m in Sources */,
+				D350756E18D315DB00945641 /* MGMDBaseViewController.m in Sources */,
 				652A978518D2832200383613 /* MGMDThirdBisViewController.m in Sources */,
 				652A973618D24B7400383613 /* main.m in Sources */,
 				652A977E18D27F8400383613 /* MGMDSecondViewController.m in Sources */,
@@ -549,6 +555,7 @@
 				652A975A18D24B7400383613 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		652A975B18D24B7400383613 /* Build configuration list for PBXNativeTarget "MGMultipleDelegationTestTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +564,7 @@
 				652A975D18D24B7400383613 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

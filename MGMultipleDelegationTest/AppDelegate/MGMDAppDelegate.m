@@ -9,10 +9,38 @@
 #import "MGMDAppDelegate.h"
 #import "MGMDManager.h"
 
+#import "MGMDViewController.h"
+#import "MGMDSecondViewController.h"
+#import "MGMDThirdViewController.h"
+
+@interface MGMDAppDelegate ()
+
+@property (nonatomic, strong) UITabBarController *tabBarController;
+@property (nonatomic, strong) MGMDManager *manager;
+
+@end
+
 @implementation MGMDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.tabBarController = [[UITabBarController alloc] init];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.manager = [[MGMDManager alloc] init];
+    
+    MGMDViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"MGMDViewController"];
+    viewController.manager = self.manager;
+    MGMDSecondViewController *secondViewController = [storyboard instantiateViewControllerWithIdentifier:@"MGMDSecondViewController"];
+    secondViewController.manager = self.manager;
+    MGMDThirdViewController *thirdViewController = [storyboard instantiateViewControllerWithIdentifier:@"MGMDThirdViewController"];
+    thirdViewController.manager = self.manager;
+    
+    [self.tabBarController setViewControllers:@[viewController, secondViewController, thirdViewController]];
+
+    self.window.rootViewController = self.tabBarController;
+    [self.window makeKeyAndVisible];
+    
     // Override point for customization after application launch.
     return YES;
 }

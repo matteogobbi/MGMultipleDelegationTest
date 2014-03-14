@@ -10,11 +10,9 @@
 
 @interface MGMDManager : NSObject
 
-- (void)addDelegate:(id)delegate;
-- (void)removeDelegate:(id)delegate;
+- (void)registerDelegate:(id)delegate;
+- (void)deregisterDelegate:(id)delegate;
 
 - (void)finishWork;
-
-+ (id)sharedManager;
 
 @end

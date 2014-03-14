@@ -11,21 +11,15 @@
 
 @implementation MGMDSecondViewController
 
-- (MGMDManager *)manager {
-    _manager = [MGMDManager sharedManager];
-    return _manager;
-}
-
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
-	// Do any additional setup after loading the view, typically from a nib.
-    [self.manager addDelegate:self];
+    [self.manager registerDelegate:self];
 }
 
-
-- (void)workDidFinishWithString:(NSString *)string {
-    NSLog(@"2: WORK FINISH ---> %@", string);
+- (void)workManager:(MGMDManager *)manager didFinishWorkForObject:(id)object
+{
+    NSLog(@"%@ finished working", object);
 }
 
 @end

@@ -12,25 +12,22 @@
 
 @implementation MGMDThirdViewController
 
-- (MGMDManager *)manager {
-    _manager = [MGMDManager sharedManager];
-    return _manager;
-}
-
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
-	// Do any additional setup after loading the view, typically from a nib.
-    [self.manager addDelegate:self];
+    [self.manager registerDelegate:self];
 }
 
-- (void)workDidFinishWithString:(NSString *)string {
-    NSLog(@"3: WORK FINISH ---> %@", string);
+- (void)workManager:(MGMDManager *)manager didFinishWorkForObject:(id)object
+{
+    NSLog(@"%@ finished working", object);
 }
 
-- (IBAction)openNewView:(id)sender {
-    MGMDThirdBisViewController *newView = [self.storyboard instantiateViewControllerWithIdentifier:@"MGMDThirdBisViewController"];
-    [self presentViewController:newView animated:YES completion:nil];
+- (IBAction)openNewView:(id)sender
+{
+    MGMDThirdBisViewController *newViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MGMDThirdBisViewController"];
+    newViewController.manager = self.manager;
+    [self presentViewController:newViewController animated:YES completion:nil];
 }
 
 @end

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="eb3-4j-gLE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="eb3-4j-gLE">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--View Controller - Item 1-->
         <scene sceneID="VNd-MD-wjO">
             <objects>
-                <viewController id="IRG-jU-1s1" customClass="MGMDViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MGMDViewController" id="IRG-jU-1s1" customClass="MGMDViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4g3-YN-FsF"/>
                         <viewControllerLayoutGuide type="bottom" id="emB-lX-vUp"/>
@@ -36,7 +36,7 @@
         <scene sceneID="nkJ-Oq-ARa">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="eb3-4j-gLE" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="aKF-4t-hs7">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -55,7 +55,7 @@
         <!--Third View Controller - Item-->
         <scene sceneID="kFD-WC-Vc1">
             <objects>
-                <viewController id="qy1-9R-kyN" customClass="MGMDThirdViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MGMDThirdViewController" id="qy1-9R-kyN" customClass="MGMDThirdViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nZ6-RB-h0F"/>
                         <viewControllerLayoutGuide type="bottom" id="BUp-v0-nwF"/>
@@ -138,7 +138,7 @@
         <!--Second View Controller - Item 2-->
         <scene sceneID="Ea6-Na-BAl">
             <objects>
-                <viewController id="H83-qn-efk" customClass="MGMDSecondViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MGMDSecondViewController" id="H83-qn-efk" customClass="MGMDSecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZQh-44-Mqg"/>
                         <viewControllerLayoutGuide type="bottom" id="Rrd-3b-a3N"/>

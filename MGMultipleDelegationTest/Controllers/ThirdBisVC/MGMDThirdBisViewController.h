@@ -7,13 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MGMDBaseViewController.h"
 #import "MGMDManagerDelegate.h"
 
-@class MGMDManager;
-
-@interface MGMDThirdBisViewController : UIViewController
-
-@property (nonatomic, strong) MGMDManager *manager;
+@interface MGMDThirdBisViewController : MGMDBaseViewController <MGMDManagerDelegate>
 
 - (IBAction)dismiss:(id)sender;
 
