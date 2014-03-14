@@ -7,23 +7,25 @@
 //
 
 #import "MGMDViewController.h"
-
-@interface MGMDViewController ()
-
-@end
+#import "MGMDManager.h"
 
 @implementation MGMDViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (MGMDManager *)manager {
+    _manager = [MGMDManager sharedManager];
+    return _manager;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+	// Do any additional setup after loading the view, typically from a nib.
+    [self.manager addDelegate:self];
+}
+
+
+- (void)workDidFinishWithString:(NSString *)string {
+    NSLog(@"1: WORK FINISH ---> %@", string);
 }
 
 @end

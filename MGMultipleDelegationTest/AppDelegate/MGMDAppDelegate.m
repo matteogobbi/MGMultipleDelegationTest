@@ -7,6 +7,7 @@
 //
 
 #import "MGMDAppDelegate.h"
+#import "MGMDManager.h"
 
 @implementation MGMDAppDelegate
 

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MGMDManagerDelegate.h"
 
-@interface MGMDViewController : UIViewController
+@class MGMDManager;
+
+@interface MGMDViewController : UIViewController <MGMDManagerDelegate>
+
+@property (nonatomic, strong) MGMDManager *manager;
 
 @end

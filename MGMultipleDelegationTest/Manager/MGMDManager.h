@@ -1,5 +1,5 @@
 //
-//  MGMDAppDelegate.h
+//  MGMDManager.h
 //  MGMultipleDelegationTest
 //
 //  Created by Matteo Gobbi on 13/03/14.
@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MGMDAppDelegate : UIResponder <UIApplicationDelegate>
+@interface MGMDManager : UIView
 
-@property (strong, nonatomic) UIWindow *window;
+- (void)addDelegate:(id)delegate;
+- (void)removeDelegate:(id)delegate;
+
+- (void)finishWork;
+
++ (id)sharedManager;
 
 @end

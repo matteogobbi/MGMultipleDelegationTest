@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MGMultipleDelegationTest/MGMDManager.m"
+            timestampString = "416441587.489392"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "-finishWork"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MGMDManager finishWork]"
+                  moduleName = "MGMultipleDelegationTest"
+                  urlString = "file:///Users/matteogobbi/Matteo%20Suite/Projects/iOS%20Project/Experiments/MGMultipleDelegationTest/MGMultipleDelegationTest/MGMDManager.m"
+                  timestampString = "416441587.768666"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "54">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MGMDManager finishWork]"
+                  moduleName = "MGMultipleDelegationTest"
+                  urlString = "file:///Users/matteogobbi/Matteo%20Suite/Projects/iOS%20Project/Experiments/MGMultipleDelegationTest/MGMultipleDelegationTest/MGMDManager.m"
+                  timestampString = "416441587.768914"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "531">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

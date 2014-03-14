@@ -12,15 +12,19 @@
 		652A972E18D24B7400383613 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652A972D18D24B7400383613 /* UIKit.framework */; };
 		652A973418D24B7400383613 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 652A973218D24B7400383613 /* InfoPlist.strings */; };
 		652A973618D24B7400383613 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A973518D24B7400383613 /* main.m */; };
-		652A973A18D24B7400383613 /* MGMDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A973918D24B7400383613 /* MGMDAppDelegate.m */; };
-		652A973D18D24B7400383613 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652A973B18D24B7400383613 /* Main.storyboard */; };
-		652A974018D24B7400383613 /* MGMDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A973F18D24B7400383613 /* MGMDViewController.m */; };
 		652A974218D24B7400383613 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652A974118D24B7400383613 /* Images.xcassets */; };
 		652A974918D24B7400383613 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652A974818D24B7400383613 /* XCTest.framework */; };
 		652A974A18D24B7400383613 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652A972918D24B7400383613 /* Foundation.framework */; };
 		652A974B18D24B7400383613 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652A972D18D24B7400383613 /* UIKit.framework */; };
 		652A975318D24B7400383613 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 652A975118D24B7400383613 /* InfoPlist.strings */; };
 		652A975518D24B7400383613 /* MGMultipleDelegationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A975418D24B7400383613 /* MGMultipleDelegationTestTests.m */; };
+		652A976918D27DD500383613 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652A976818D27DD500383613 /* Main.storyboard */; };
+		652A977918D27E9700383613 /* MGMDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A976D18D27E9700383613 /* MGMDAppDelegate.m */; };
+		652A977A18D27E9700383613 /* MGMDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A977118D27E9700383613 /* MGMDViewController.m */; };
+		652A977B18D27E9700383613 /* MGMDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A977818D27E9700383613 /* MGMDManager.m */; };
+		652A977E18D27F8400383613 /* MGMDSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A977D18D27F8400383613 /* MGMDSecondViewController.m */; };
+		652A978118D27F9000383613 /* MGMDThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A978018D27F9000383613 /* MGMDThirdViewController.m */; };
+		652A978518D2832200383613 /* MGMDThirdBisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A978418D2832200383613 /* MGMDThirdBisViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,17 +46,26 @@
 		652A973318D24B7400383613 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		652A973518D24B7400383613 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		652A973718D24B7400383613 /* MGMultipleDelegationTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGMultipleDelegationTest-Prefix.pch"; sourceTree = "<group>"; };
-		652A973818D24B7400383613 /* MGMDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGMDAppDelegate.h; sourceTree = "<group>"; };
-		652A973918D24B7400383613 /* MGMDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGMDAppDelegate.m; sourceTree = "<group>"; };
-		652A973C18D24B7400383613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		652A973E18D24B7400383613 /* MGMDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGMDViewController.h; sourceTree = "<group>"; };
-		652A973F18D24B7400383613 /* MGMDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGMDViewController.m; sourceTree = "<group>"; };
 		652A974118D24B7400383613 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		652A974718D24B7400383613 /* MGMultipleDelegationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGMultipleDelegationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		652A974818D24B7400383613 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		652A975018D24B7400383613 /* MGMultipleDelegationTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MGMultipleDelegationTestTests-Info.plist"; sourceTree = "<group>"; };
 		652A975218D24B7400383613 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		652A975418D24B7400383613 /* MGMultipleDelegationTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGMultipleDelegationTestTests.m; sourceTree = "<group>"; };
+		652A976818D27DD500383613 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = MGMultipleDelegationTest/Main.storyboard; sourceTree = "<group>"; };
+		652A976C18D27E9700383613 /* MGMDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMDAppDelegate.h; sourceTree = "<group>"; };
+		652A976D18D27E9700383613 /* MGMDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMDAppDelegate.m; sourceTree = "<group>"; };
+		652A977018D27E9700383613 /* MGMDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMDViewController.h; sourceTree = "<group>"; };
+		652A977118D27E9700383613 /* MGMDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMDViewController.m; sourceTree = "<group>"; };
+		652A977618D27E9700383613 /* MGMDManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMDManagerDelegate.h; sourceTree = "<group>"; };
+		652A977718D27E9700383613 /* MGMDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMDManager.h; sourceTree = "<group>"; };
+		652A977818D27E9700383613 /* MGMDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMDManager.m; sourceTree = "<group>"; };
+		652A977C18D27F8400383613 /* MGMDSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMDSecondViewController.h; sourceTree = "<group>"; };
+		652A977D18D27F8400383613 /* MGMDSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMDSecondViewController.m; sourceTree = "<group>"; };
+		652A977F18D27F9000383613 /* MGMDThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMDThirdViewController.h; sourceTree = "<group>"; };
+		652A978018D27F9000383613 /* MGMDThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMDThirdViewController.m; sourceTree = "<group>"; };
+		652A978318D2832200383613 /* MGMDThirdBisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMDThirdBisViewController.h; sourceTree = "<group>"; };
+		652A978418D2832200383613 /* MGMDThirdBisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMDThirdBisViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				652A972F18D24B7400383613 /* MGMultipleDelegationTest */,
+				652A976818D27DD500383613 /* Main.storyboard */,
 				652A974E18D24B7400383613 /* MGMultipleDelegationTestTests */,
 				652A972818D24B7400383613 /* Frameworks */,
 				652A972718D24B7400383613 /* Products */,
@@ -112,13 +126,11 @@
 		652A972F18D24B7400383613 /* MGMultipleDelegationTest */ = {
 			isa = PBXGroup;
 			children = (
-				652A973818D24B7400383613 /* MGMDAppDelegate.h */,
-				652A973918D24B7400383613 /* MGMDAppDelegate.m */,
-				652A973B18D24B7400383613 /* Main.storyboard */,
-				652A973E18D24B7400383613 /* MGMDViewController.h */,
-				652A973F18D24B7400383613 /* MGMDViewController.m */,
-				652A974118D24B7400383613 /* Images.xcassets */,
+				652A976B18D27E9700383613 /* AppDelegate */,
+				652A976E18D27E9700383613 /* Controllers */,
+				652A977418D27E9700383613 /* Manager */,
 				652A973018D24B7400383613 /* Supporting Files */,
+				652A974118D24B7400383613 /* Images.xcassets */,
 			);
 			path = MGMultipleDelegationTest;
 			sourceTree = "<group>";
@@ -150,6 +162,80 @@
 				652A975118D24B7400383613 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		652A976B18D27E9700383613 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				652A976C18D27E9700383613 /* MGMDAppDelegate.h */,
+				652A976D18D27E9700383613 /* MGMDAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		652A976E18D27E9700383613 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				652A976F18D27E9700383613 /* FirstVC */,
+				652A977218D27E9700383613 /* SecondVC */,
+				652A977318D27E9700383613 /* ThirdVC */,
+				652A978218D2831300383613 /* ThirdBisVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		652A976F18D27E9700383613 /* FirstVC */ = {
+			isa = PBXGroup;
+			children = (
+				652A977018D27E9700383613 /* MGMDViewController.h */,
+				652A977118D27E9700383613 /* MGMDViewController.m */,
+			);
+			path = FirstVC;
+			sourceTree = "<group>";
+		};
+		652A977218D27E9700383613 /* SecondVC */ = {
+			isa = PBXGroup;
+			children = (
+				652A977C18D27F8400383613 /* MGMDSecondViewController.h */,
+				652A977D18D27F8400383613 /* MGMDSecondViewController.m */,
+			);
+			path = SecondVC;
+			sourceTree = "<group>";
+		};
+		652A977318D27E9700383613 /* ThirdVC */ = {
+			isa = PBXGroup;
+			children = (
+				652A977F18D27F9000383613 /* MGMDThirdViewController.h */,
+				652A978018D27F9000383613 /* MGMDThirdViewController.m */,
+			);
+			path = ThirdVC;
+			sourceTree = "<group>";
+		};
+		652A977418D27E9700383613 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				652A977518D27E9700383613 /* Delegate */,
+				652A977718D27E9700383613 /* MGMDManager.h */,
+				652A977818D27E9700383613 /* MGMDManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		652A977518D27E9700383613 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				652A977618D27E9700383613 /* MGMDManagerDelegate.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		652A978218D2831300383613 /* ThirdBisVC */ = {
+			isa = PBXGroup;
+			children = (
+				652A978318D2832200383613 /* MGMDThirdBisViewController.h */,
+				652A978418D2832200383613 /* MGMDThirdBisViewController.m */,
+			);
+			path = ThirdBisVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +315,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652A976918D27DD500383613 /* Main.storyboard in Resources */,
 				652A974218D24B7400383613 /* Images.xcassets in Resources */,
 				652A973418D24B7400383613 /* InfoPlist.strings in Resources */,
-				652A973D18D24B7400383613 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +336,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652A977B18D27E9700383613 /* MGMDManager.m in Sources */,
+				652A978118D27F9000383613 /* MGMDThirdViewController.m in Sources */,
+				652A978518D2832200383613 /* MGMDThirdBisViewController.m in Sources */,
 				652A973618D24B7400383613 /* main.m in Sources */,
-				652A973A18D24B7400383613 /* MGMDAppDelegate.m in Sources */,
-				652A974018D24B7400383613 /* MGMDViewController.m in Sources */,
+				652A977E18D27F8400383613 /* MGMDSecondViewController.m in Sources */,
+				652A977918D27E9700383613 /* MGMDAppDelegate.m in Sources */,
+				652A977A18D27E9700383613 /* MGMDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +371,6 @@
 				652A973318D24B7400383613 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		652A973B18D24B7400383613 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				652A973C18D24B7400383613 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		652A975118D24B7400383613 /* InfoPlist.strings */ = {
@@ -384,7 +466,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MGMultipleDelegationTest/MGMultipleDelegationTest-Prefix.pch";
 				INFOPLIST_FILE = "MGMultipleDelegationTest/MGMultipleDelegationTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -397,7 +481,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MGMultipleDelegationTest/MGMultipleDelegationTest-Prefix.pch";
 				INFOPLIST_FILE = "MGMultipleDelegationTest/MGMultipleDelegationTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
