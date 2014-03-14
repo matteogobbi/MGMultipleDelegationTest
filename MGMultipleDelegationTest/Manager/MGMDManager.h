@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MGMDManager : UIView
+@interface MGMDManager : NSObject
 
 - (void)addDelegate:(id)delegate;
 - (void)removeDelegate:(id)delegate;
